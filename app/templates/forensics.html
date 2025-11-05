@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h3>Forensic Evidence</h3>
+  {% if session.get('user') and session['user']['role'] == 'admin' %}
+  <button id="btn-freeze" class="btn btn-primary">Freeze Current Logs</button>
+  {% endif %}
+</div>
+<div class="card">
+  <div class="card-body">
+    <table class="table" id="evidence-table">
+      <thead>
+        <tr>
+          <th>Hash</th>
+          <th>File</th>
+          <th>Created By</th>
+          <th>Timestamp</th>
+          <th>Rows</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    window.SIEM.initForensics();
+  });
+</script>
+{% endblock %}

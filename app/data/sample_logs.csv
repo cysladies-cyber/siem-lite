@@ -1,0 +1,521 @@
+timestamp,source,host,ip,event_type,status_code,bytes,message
+2025-10-31T04:29:02.859201+00:00,db-server,srv-app-2,10.0.3.10,login,401,856,User bob login failed
+2025-11-05T15:19:02.859201+00:00,auth-service,srv-app-1,10.0.3.8,file_access,401,405,File /var/log/auth.log accessed by trent
+2025-11-01T10:16:02.859201+00:00,db-server,srv-app-1,10.0.2.17,file_access,500,332,File /home/alice/docs/report.pdf accessed by bob
+2025-10-30T23:24:02.859201+00:00,db-server,srv-db-1,192.168.3.11,file_access,403,1299,File /etc/passwd accessed by trent
+2025-10-30T19:36:02.859201+00:00,vpn-gateway,srv-db-1,192.168.3.4,firewall_allow,401,503,Firewall allowed traffic from 192.168.3.4
+2025-11-01T12:18:02.859201+00:00,auth-service,srv-app-2,10.0.2.2,firewall_block,500,215,Firewall blocked traffic from 10.0.2.2
+2025-11-03T01:42:02.859201+00:00,db-server,srv-app-2,10.0.3.21,login,201,461,User carol login success
+2025-11-04T04:18:02.859201+00:00,vpn-gateway,srv-app-2,10.0.4.12,file_access,200,311,File /var/log/auth.log accessed by mallory
+2025-11-01T08:08:02.859201+00:00,firewall,fw-main,10.0.2.13,firewall_block,403,472,Firewall blocked traffic from 10.0.2.13
+2025-11-03T19:04:02.859201+00:00,firewall,srv-db-1,10.0.3.9,sql_query,400,407,Query executed by alice on customers
+2025-10-31T15:49:02.859201+00:00,firewall,vpn-1,10.0.1.17,firewall_allow,500,1137,Firewall allowed traffic from 10.0.1.17
+2025-10-30T01:13:02.859201+00:00,auth-service,vpn-1,10.0.3.21,firewall_block,404,198,Firewall blocked traffic from 10.0.3.21
+2025-11-04T01:58:02.859201+00:00,db-server,vpn-1,10.0.2.22,login,201,694,User dan login success
+2025-10-31T15:49:02.859201+00:00,web-server,vpn-1,192.168.2.16,file_access,200,492,File /etc/passwd accessed by mallory
+2025-11-02T10:03:02.859201+00:00,web-server,vpn-1,10.0.1.21,login,401,1476,User carol login failed
+2025-10-31T09:08:02.859201+00:00,vpn-gateway,srv-app-2,10.0.3.20,firewall_block,500,941,Firewall blocked traffic from 10.0.3.20
+2025-11-02T11:12:02.859201+00:00,db-server,fw-main,192.168.2.13,file_access,503,243,File /home/alice/docs/report.pdf accessed by alice
+2025-11-05T14:43:02.859201+00:00,vpn-gateway,srv-app-2,10.0.1.2,firewall_allow,201,506,Firewall allowed traffic from 10.0.1.2
+2025-10-30T16:29:02.859201+00:00,db-server,srv-app-1,192.168.2.12,ddos,401,1913,Potential DDoS detected from 192.168.2.12
+2025-11-05T01:19:02.859201+00:00,vpn-gateway,vpn-1,192.168.2.2,login,401,1848,User bob login success
+2025-11-03T19:47:02.859201+00:00,firewall,fw-main,10.0.1.14,file_access,201,570,File /var/log/auth.log accessed by dan
+2025-11-05T00:31:02.859201+00:00,firewall,srv-app-2,10.0.3.24,file_access,503,264,File /etc/passwd accessed by alice
+2025-11-05T01:41:02.859201+00:00,auth-service,srv-app-2,10.0.2.19,sql_query,500,395,Query executed by trent on customers
+2025-10-31T19:02:02.859201+00:00,firewall,srv-db-1,192.168.1.21,file_access,403,63,File /srv/app/config.yaml accessed by carol
+2025-11-01T01:56:02.859201+00:00,auth-service,vpn-1,192.168.2.19,login,200,528,User carol login success
+2025-10-30T13:36:02.859201+00:00,auth-service,srv-app-2,10.0.1.18,recon,201,510,Reconnaissance pattern detected for 10.0.1.18
+2025-10-31T06:49:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.5,recon,200,498,Reconnaissance pattern detected for 192.168.3.5
+2025-11-05T13:27:02.859201+00:00,db-server,srv-db-1,10.0.3.5,firewall_allow,404,258,Firewall allowed traffic from 10.0.3.5
+2025-11-02T08:00:02.859201+00:00,auth-service,srv-app-1,192.168.1.22,file_access,201,230,File /home/alice/docs/report.pdf accessed by carol
+2025-11-02T21:23:02.859201+00:00,web-server,srv-db-1,10.0.4.1,sql_query,400,350,Query executed by eve on customers
+2025-11-05T05:31:02.859201+00:00,auth-service,srv-app-2,10.0.3.20,login,201,246,User mallory login success
+2025-11-01T05:40:02.859201+00:00,db-server,vpn-1,192.168.2.6,firewall_block,403,194,Firewall blocked traffic from 192.168.2.6
+2025-11-02T01:38:02.859201+00:00,db-server,srv-app-2,192.168.3.20,login,403,216,User alice login success
+2025-10-31T04:37:02.859201+00:00,web-server,vpn-1,10.0.1.10,login,404,445,User eve login success
+2025-11-03T01:39:02.859201+00:00,auth-service,srv-db-1,10.0.3.6,sql_query,401,526,Query executed by trent on transactions
+2025-11-01T14:43:02.859201+00:00,web-server,fw-main,10.0.1.7,sql_query,400,580,Query executed by trent on transactions
+2025-11-01T22:56:02.859201+00:00,auth-service,fw-main,10.0.1.10,login,503,84,User eve login success
+2025-11-01T12:13:02.859201+00:00,web-server,fw-main,10.0.4.13,login,403,213,User mallory login success
+2025-10-30T05:37:02.859201+00:00,db-server,srv-app-2,192.168.3.5,login,403,191,User bob login success
+2025-11-03T07:16:02.859201+00:00,web-server,srv-db-1,10.0.1.12,sql_query,500,464,Query executed by dan on logs
+2025-11-03T19:51:02.859201+00:00,db-server,vpn-1,10.0.4.9,login,201,557,User trent login success
+2025-11-02T15:09:02.859201+00:00,db-server,vpn-1,10.0.2.9,file_access,401,102,File /var/log/auth.log accessed by eve
+2025-11-03T12:58:02.859201+00:00,auth-service,srv-db-1,10.0.4.2,firewall_allow,401,339,Firewall allowed traffic from 10.0.4.2
+2025-11-02T14:04:02.859201+00:00,firewall,srv-app-2,192.168.2.11,file_access,503,822,File /home/alice/docs/report.pdf accessed by mallory
+2025-10-30T23:35:02.859201+00:00,web-server,srv-db-1,10.0.3.10,sql_query,401,670,Query executed by dan on inventory
+2025-11-04T13:04:02.859201+00:00,web-server,srv-app-1,10.0.2.4,file_access,500,92,File /srv/app/config.yaml accessed by alice
+2025-11-05T06:17:02.859201+00:00,auth-service,fw-main,10.0.2.11,login,401,2882,User trent login failed
+2025-11-05T03:41:02.859201+00:00,web-server,fw-main,192.168.1.20,file_access,403,2035,File /home/alice/docs/report.pdf accessed by peggy
+2025-11-01T15:24:02.859201+00:00,auth-service,srv-db-1,10.0.3.13,login,403,83,User carol login success
+2025-11-01T13:13:02.859201+00:00,web-server,srv-app-2,10.0.1.17,file_access,500,327,File /srv/app/config.yaml accessed by alice
+2025-11-01T06:33:02.859201+00:00,firewall,vpn-1,10.0.1.6,sql_query,500,266,Query executed by eve on inventory
+2025-11-03T16:30:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.9,firewall_allow,503,241,Firewall allowed traffic from 10.0.3.9
+2025-10-30T06:00:02.859201+00:00,firewall,srv-app-2,192.168.1.24,file_access,400,1125,File /etc/passwd accessed by bob
+2025-11-03T19:07:02.859201+00:00,firewall,srv-app-2,10.0.1.13,login,403,344,User trent login success
+2025-11-02T02:03:02.859201+00:00,firewall,srv-db-1,10.0.1.21,firewall_block,503,817,Firewall blocked traffic from 10.0.1.21
+2025-10-30T09:04:02.859201+00:00,web-server,srv-app-2,10.0.1.6,firewall_block,400,241,Firewall blocked traffic from 10.0.1.6
+2025-10-31T05:19:02.859201+00:00,web-server,fw-main,10.0.3.18,firewall_allow,404,168,Firewall allowed traffic from 10.0.3.18
+2025-10-31T05:21:02.859201+00:00,web-server,srv-db-1,10.0.2.4,firewall_block,200,1142,Firewall blocked traffic from 10.0.2.4
+2025-11-03T04:34:02.859201+00:00,web-server,srv-app-1,192.168.3.8,file_access,401,994,File /etc/passwd accessed by alice
+2025-11-02T20:53:02.859201+00:00,db-server,srv-app-1,192.168.2.10,firewall_allow,404,169,Firewall allowed traffic from 192.168.2.10
+2025-11-04T11:56:02.859201+00:00,db-server,fw-main,10.0.2.16,login,500,200,User peggy login success
+2025-11-04T05:01:02.859201+00:00,vpn-gateway,srv-db-1,10.0.4.11,file_access,401,678,File /srv/app/config.yaml accessed by trent
+2025-11-02T17:56:02.859201+00:00,db-server,srv-app-2,192.168.2.5,login,401,329,User eve login success
+2025-11-05T05:51:02.859201+00:00,web-server,srv-app-1,10.0.3.14,login,500,384,User peggy login success
+2025-11-04T00:27:02.859201+00:00,auth-service,srv-db-1,10.0.3.9,firewall_block,500,536,Firewall blocked traffic from 10.0.3.9
+2025-11-05T12:53:02.859201+00:00,vpn-gateway,vpn-1,10.0.4.17,file_access,500,305,File /home/alice/docs/report.pdf accessed by eve
+2025-11-01T13:02:02.859201+00:00,web-server,srv-db-1,10.0.2.7,login,400,119,User eve login success
+2025-10-31T01:32:02.859201+00:00,db-server,srv-app-2,10.0.4.21,sql_query,400,200,Query executed by carol on logs
+2025-10-30T10:30:02.859201+00:00,vpn-gateway,srv-db-1,10.0.2.9,privilege_escalation,503,263,Privilege escalation attempt by mallory
+2025-11-01T00:25:02.859201+00:00,db-server,fw-main,10.0.2.6,recon,201,361,Reconnaissance pattern detected for 10.0.2.6
+2025-10-30T12:43:02.859201+00:00,vpn-gateway,srv-db-1,10.0.1.22,login,401,680,User trent login success
+2025-11-04T01:06:02.859201+00:00,db-server,vpn-1,192.168.1.14,ddos,403,3213,Potential DDoS detected from 192.168.1.14
+2025-10-31T01:10:02.859201+00:00,web-server,srv-app-2,10.0.3.20,recon,201,263,Reconnaissance pattern detected for 10.0.3.20
+2025-10-30T18:34:02.859201+00:00,firewall,fw-main,192.168.3.9,login,503,305,User peggy login success
+2025-10-30T17:31:02.859201+00:00,db-server,vpn-1,10.0.3.3,firewall_block,500,241,Firewall blocked traffic from 10.0.3.3
+2025-10-31T14:46:02.859201+00:00,web-server,srv-app-1,10.0.1.16,ddos,400,6271,Potential DDoS detected from 10.0.1.16
+2025-11-05T09:30:02.859201+00:00,firewall,srv-app-1,192.168.1.24,ddos,403,2983,Potential DDoS detected from 192.168.1.24
+2025-10-30T20:02:02.859201+00:00,firewall,srv-db-1,192.168.3.11,firewall_allow,403,1460,Firewall allowed traffic from 192.168.3.11
+2025-11-05T14:24:02.859201+00:00,db-server,vpn-1,10.0.1.11,recon,400,369,Reconnaissance pattern detected for 10.0.1.11
+2025-11-02T02:02:02.859201+00:00,vpn-gateway,fw-main,192.168.3.19,login,503,1003,User mallory login success
+2025-10-31T02:38:02.859201+00:00,db-server,fw-main,192.168.2.7,sql_query,403,533,Query executed by alice on inventory
+2025-10-30T22:07:02.859201+00:00,db-server,srv-app-1,192.168.1.8,file_access,200,575,File /srv/app/config.yaml accessed by alice
+2025-11-01T01:18:02.859201+00:00,vpn-gateway,fw-main,192.168.3.17,firewall_allow,503,564,Firewall allowed traffic from 192.168.3.17
+2025-11-05T04:03:02.859201+00:00,db-server,fw-main,192.168.2.5,login,201,1166,User alice login success
+2025-11-05T04:53:02.859201+00:00,web-server,srv-app-1,192.168.1.23,file_access,201,482,File /home/alice/docs/report.pdf accessed by eve
+2025-11-03T15:32:02.859201+00:00,firewall,srv-app-2,192.168.1.21,sql_query,400,87,Query executed by carol on customers
+2025-11-02T01:31:02.859201+00:00,firewall,srv-db-1,192.168.2.10,firewall_block,403,639,Firewall blocked traffic from 192.168.2.10
+2025-11-02T07:36:02.859201+00:00,vpn-gateway,fw-main,10.0.2.15,sql_query,503,428,Query executed by trent on inventory
+2025-11-02T13:57:02.859201+00:00,web-server,vpn-1,192.168.1.3,sql_query,401,751,Query executed by mallory on inventory
+2025-11-03T06:11:02.859201+00:00,web-server,fw-main,10.0.1.10,file_access,400,405,File /etc/passwd accessed by peggy
+2025-10-31T01:18:02.859201+00:00,firewall,srv-app-1,10.0.2.13,firewall_allow,500,212,Firewall allowed traffic from 10.0.2.13
+2025-11-03T10:37:02.859201+00:00,db-server,vpn-1,192.168.1.2,firewall_allow,404,1286,Firewall allowed traffic from 192.168.1.2
+2025-11-04T11:19:02.859201+00:00,auth-service,vpn-1,10.0.1.18,sql_query,401,2224,Query executed by dan on customers
+2025-11-03T20:35:02.859201+00:00,auth-service,fw-main,10.0.2.19,privilege_escalation,403,621,Privilege escalation attempt by mallory
+2025-11-03T19:41:02.859201+00:00,vpn-gateway,fw-main,192.168.3.1,login,400,1100,User carol login success
+2025-11-01T13:29:02.859201+00:00,db-server,fw-main,10.0.3.18,file_access,200,869,File /home/alice/docs/report.pdf accessed by carol
+2025-10-30T18:15:02.859201+00:00,db-server,vpn-1,10.0.4.5,file_access,500,578,File /home/alice/docs/report.pdf accessed by dan
+2025-11-03T07:07:02.859201+00:00,auth-service,srv-app-2,192.168.1.2,sql_query,404,504,Query executed by alice on inventory
+2025-11-02T04:14:02.859201+00:00,web-server,vpn-1,10.0.4.19,firewall_block,401,584,Firewall blocked traffic from 10.0.4.19
+2025-10-31T11:25:02.859201+00:00,auth-service,srv-db-1,192.168.1.17,firewall_allow,200,547,Firewall allowed traffic from 192.168.1.17
+2025-10-30T22:41:02.859201+00:00,db-server,fw-main,10.0.2.21,ddos,401,1310,Potential DDoS detected from 10.0.2.21
+2025-11-03T01:59:02.859201+00:00,db-server,srv-app-2,10.0.3.18,firewall_allow,503,798,Firewall allowed traffic from 10.0.3.18
+2025-11-02T18:34:02.859201+00:00,firewall,srv-app-1,10.0.2.13,sql_query,401,1547,Query executed by trent on logs
+2025-10-30T22:44:02.859201+00:00,auth-service,srv-db-1,192.168.2.18,firewall_block,201,349,Firewall blocked traffic from 192.168.2.18
+2025-11-01T21:40:02.859201+00:00,db-server,srv-app-1,10.0.3.12,firewall_allow,503,850,Firewall allowed traffic from 10.0.3.12
+2025-11-01T10:31:02.859201+00:00,firewall,srv-db-1,192.168.3.23,firewall_allow,500,240,Firewall allowed traffic from 192.168.3.23
+2025-11-05T00:52:02.859201+00:00,firewall,srv-db-1,192.168.2.19,login,401,560,User bob login failed
+2025-11-04T11:42:02.859201+00:00,db-server,srv-app-1,10.0.4.23,firewall_allow,401,124,Firewall allowed traffic from 10.0.4.23
+2025-11-03T01:07:02.859201+00:00,db-server,vpn-1,192.168.3.22,login,401,216,User peggy login failed
+2025-10-30T23:06:02.859201+00:00,vpn-gateway,srv-app-1,10.0.1.13,firewall_block,404,298,Firewall blocked traffic from 10.0.1.13
+2025-11-05T08:15:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.7,login,401,614,User alice login success
+2025-11-02T01:47:02.859201+00:00,web-server,srv-app-2,192.168.2.19,sql_query,403,569,Query executed by alice on transactions
+2025-10-30T02:08:02.859201+00:00,web-server,vpn-1,10.0.4.11,file_access,200,681,File /etc/passwd accessed by peggy
+2025-11-04T00:29:02.859201+00:00,vpn-gateway,vpn-1,10.0.2.4,firewall_block,503,433,Firewall blocked traffic from 10.0.2.4
+2025-10-30T09:55:02.859201+00:00,vpn-gateway,srv-db-1,192.168.1.22,firewall_block,200,169,Firewall blocked traffic from 192.168.1.22
+2025-11-03T11:45:02.859201+00:00,auth-service,fw-main,192.168.1.18,file_access,201,739,File /var/log/auth.log accessed by bob
+2025-10-31T08:32:02.859201+00:00,vpn-gateway,vpn-1,10.0.4.12,login,500,357,User bob login success
+2025-11-05T04:38:02.859201+00:00,web-server,fw-main,192.168.1.20,firewall_block,401,241,Firewall blocked traffic from 192.168.1.20
+2025-11-03T10:57:02.859201+00:00,auth-service,srv-db-1,192.168.1.14,file_access,404,529,File /var/log/auth.log accessed by peggy
+2025-10-30T16:24:02.859201+00:00,auth-service,srv-app-1,192.168.1.15,login,201,602,User alice login success
+2025-11-05T14:13:02.859201+00:00,vpn-gateway,srv-db-1,10.0.2.8,recon,500,257,Reconnaissance pattern detected for 10.0.2.8
+2025-11-03T17:34:02.859201+00:00,auth-service,srv-db-1,192.168.3.10,sql_query,403,280,Query executed by dan on transactions
+2025-11-04T09:45:02.859201+00:00,auth-service,srv-db-1,192.168.2.23,login,404,232,User trent login success
+2025-11-05T07:15:02.859201+00:00,vpn-gateway,vpn-1,192.168.3.21,privilege_escalation,200,559,Privilege escalation attempt by eve
+2025-10-30T05:59:02.859201+00:00,db-server,srv-db-1,10.0.4.18,login,200,275,User bob login success
+2025-10-31T12:49:02.859201+00:00,auth-service,srv-app-1,192.168.2.16,firewall_block,401,319,Firewall blocked traffic from 192.168.2.16
+2025-10-31T17:03:02.859201+00:00,db-server,vpn-1,192.168.3.9,file_access,201,643,File /etc/passwd accessed by bob
+2025-11-02T00:23:02.859201+00:00,firewall,fw-main,192.168.3.12,file_access,503,360,File /etc/passwd accessed by mallory
+2025-11-03T19:28:02.859201+00:00,vpn-gateway,fw-main,192.168.2.15,login,403,186,User alice login success
+2025-11-01T05:54:02.859201+00:00,web-server,srv-app-2,10.0.3.18,file_access,403,549,File /srv/app/config.yaml accessed by dan
+2025-11-04T14:41:02.859201+00:00,db-server,srv-app-1,192.168.1.6,firewall_allow,200,357,Firewall allowed traffic from 192.168.1.6
+2025-10-30T19:20:02.859201+00:00,vpn-gateway,fw-main,192.168.3.3,sql_query,500,584,Query executed by bob on inventory
+2025-10-30T03:46:02.859201+00:00,web-server,vpn-1,192.168.1.22,recon,404,212,Reconnaissance pattern detected for 192.168.1.22
+2025-11-04T21:09:02.859201+00:00,db-server,srv-db-1,10.0.3.9,login,404,550,User dan login success
+2025-11-02T21:29:02.859201+00:00,web-server,srv-app-2,10.0.2.3,file_access,400,297,File /var/log/auth.log accessed by bob
+2025-10-31T22:27:02.859201+00:00,firewall,fw-main,192.168.3.1,recon,503,1959,Reconnaissance pattern detected for 192.168.3.1
+2025-11-02T14:20:02.859201+00:00,db-server,srv-app-2,192.168.1.17,sql_query,201,369,Query executed by eve on customers
+2025-11-02T22:11:02.859201+00:00,db-server,fw-main,192.168.1.20,firewall_allow,200,1043,Firewall allowed traffic from 192.168.1.20
+2025-11-04T16:32:02.859201+00:00,vpn-gateway,vpn-1,10.0.1.11,file_access,503,1078,File /var/log/auth.log accessed by mallory
+2025-11-05T19:17:02.859201+00:00,web-server,srv-app-1,192.168.1.20,file_access,201,471,File /srv/app/config.yaml accessed by peggy
+2025-11-04T21:11:02.859201+00:00,web-server,srv-db-1,10.0.4.24,firewall_allow,403,241,Firewall allowed traffic from 10.0.4.24
+2025-11-05T17:20:02.859201+00:00,db-server,srv-app-1,10.0.4.13,login,201,444,User carol login success
+2025-11-02T17:06:02.859201+00:00,web-server,srv-db-1,10.0.4.8,login,500,108,User trent login success
+2025-11-02T15:46:02.859201+00:00,vpn-gateway,srv-app-1,192.168.3.22,sql_query,500,407,Query executed by eve on transactions
+2025-11-01T08:34:02.859201+00:00,firewall,srv-app-2,10.0.3.10,file_access,400,243,File /etc/passwd accessed by alice
+2025-11-02T18:02:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.9,sql_query,500,261,Query executed by carol on inventory
+2025-10-30T10:00:02.859201+00:00,web-server,fw-main,192.168.3.13,file_access,403,1341,File /var/log/auth.log accessed by dan
+2025-11-02T10:35:02.859201+00:00,firewall,srv-app-2,10.0.4.23,recon,503,381,Reconnaissance pattern detected for 10.0.4.23
+2025-11-03T06:21:02.859201+00:00,firewall,srv-app-2,10.0.3.4,firewall_allow,400,390,Firewall allowed traffic from 10.0.3.4
+2025-10-31T02:05:02.859201+00:00,vpn-gateway,srv-app-1,10.0.4.1,firewall_block,201,585,Firewall blocked traffic from 10.0.4.1
+2025-11-04T18:15:02.859201+00:00,firewall,srv-app-1,10.0.3.9,login,503,348,User trent login success
+2025-10-30T20:22:02.859201+00:00,auth-service,srv-db-1,10.0.2.2,file_access,404,571,File /home/alice/docs/report.pdf accessed by peggy
+2025-10-31T11:58:02.859201+00:00,firewall,fw-main,192.168.3.14,firewall_block,200,285,Firewall blocked traffic from 192.168.3.14
+2025-11-05T20:20:02.859201+00:00,auth-service,srv-db-1,10.0.3.13,firewall_allow,403,241,Firewall allowed traffic from 10.0.3.13
+2025-11-04T02:54:02.859201+00:00,firewall,vpn-1,192.168.2.18,login,200,555,User eve login success
+2025-11-03T19:17:02.859201+00:00,db-server,srv-app-2,192.168.3.3,login,500,152,User mallory login success
+2025-10-30T16:33:02.859201+00:00,vpn-gateway,vpn-1,192.168.2.10,recon,200,326,Reconnaissance pattern detected for 192.168.2.10
+2025-11-03T07:43:02.859201+00:00,db-server,srv-app-1,10.0.4.20,privilege_escalation,201,221,Privilege escalation attempt by bob
+2025-11-05T12:58:02.859201+00:00,db-server,srv-app-2,10.0.1.12,firewall_block,404,520,Firewall blocked traffic from 10.0.1.12
+2025-10-31T21:53:02.859201+00:00,firewall,fw-main,192.168.3.18,sql_query,400,681,Query executed by eve on transactions
+2025-10-30T10:02:02.859201+00:00,auth-service,srv-db-1,10.0.4.8,firewall_block,500,144,Firewall blocked traffic from 10.0.4.8
+2025-11-01T02:16:02.859201+00:00,auth-service,srv-db-1,10.0.3.22,login,201,697,User peggy login success
+2025-11-03T07:39:02.859201+00:00,web-server,fw-main,192.168.2.8,file_access,404,1000,File /etc/passwd accessed by trent
+2025-10-30T19:38:02.859201+00:00,web-server,vpn-1,10.0.4.4,file_access,404,219,File /home/alice/docs/report.pdf accessed by eve
+2025-11-03T23:50:02.859201+00:00,firewall,srv-app-2,192.168.1.18,firewall_allow,404,330,Firewall allowed traffic from 192.168.1.18
+2025-11-02T22:21:02.859201+00:00,firewall,srv-db-1,192.168.3.20,firewall_allow,200,120,Firewall allowed traffic from 192.168.3.20
+2025-11-03T01:17:02.859201+00:00,web-server,srv-app-1,10.0.2.13,firewall_allow,503,634,Firewall allowed traffic from 10.0.2.13
+2025-11-03T06:37:02.859201+00:00,auth-service,vpn-1,10.0.2.16,recon,503,841,Reconnaissance pattern detected for 10.0.2.16
+2025-10-30T19:04:02.859201+00:00,vpn-gateway,srv-db-1,192.168.1.6,firewall_allow,404,495,Firewall allowed traffic from 192.168.1.6
+2025-10-31T05:03:02.859201+00:00,web-server,fw-main,192.168.2.13,login,500,1049,User eve login success
+2025-11-04T12:12:02.859201+00:00,web-server,srv-app-1,192.168.1.20,login,400,845,User mallory login success
+2025-11-02T20:57:02.859201+00:00,vpn-gateway,vpn-1,10.0.4.3,firewall_block,403,1415,Firewall blocked traffic from 10.0.4.3
+2025-10-31T21:37:02.859201+00:00,vpn-gateway,srv-app-2,10.0.2.8,firewall_block,401,598,Firewall blocked traffic from 10.0.2.8
+2025-11-04T12:59:02.859201+00:00,vpn-gateway,vpn-1,10.0.4.23,login,503,810,User bob login success
+2025-10-30T16:02:02.859201+00:00,firewall,vpn-1,192.168.1.10,file_access,500,343,File /home/alice/docs/report.pdf accessed by carol
+2025-11-05T04:37:02.859201+00:00,web-server,srv-app-2,192.168.1.15,firewall_allow,200,818,Firewall allowed traffic from 192.168.1.15
+2025-11-02T09:07:02.859201+00:00,db-server,srv-app-2,10.0.4.17,login,403,648,User eve login success
+2025-10-31T08:15:02.859201+00:00,vpn-gateway,vpn-1,10.0.1.24,firewall_allow,400,505,Firewall allowed traffic from 10.0.1.24
+2025-10-31T20:49:02.859201+00:00,vpn-gateway,srv-db-1,192.168.3.1,firewall_block,200,505,Firewall blocked traffic from 192.168.3.1
+2025-11-05T10:18:02.859201+00:00,auth-service,fw-main,192.168.3.17,file_access,403,497,File /var/log/auth.log accessed by trent
+2025-11-02T07:18:02.859201+00:00,auth-service,srv-app-2,192.168.1.17,file_access,500,395,File /var/log/auth.log accessed by mallory
+2025-11-02T13:16:02.859201+00:00,db-server,fw-main,10.0.2.10,firewall_block,404,410,Firewall blocked traffic from 10.0.2.10
+2025-11-01T16:05:02.859201+00:00,db-server,fw-main,10.0.3.16,file_access,400,224,File /srv/app/config.yaml accessed by trent
+2025-11-01T17:52:02.859201+00:00,web-server,srv-db-1,192.168.3.4,recon,404,275,Reconnaissance pattern detected for 192.168.3.4
+2025-11-04T18:38:02.859201+00:00,db-server,fw-main,10.0.1.6,file_access,201,1019,File /var/log/auth.log accessed by dan
+2025-11-05T13:22:02.859201+00:00,auth-service,srv-db-1,192.168.2.7,file_access,503,275,File /srv/app/config.yaml accessed by mallory
+2025-10-30T10:26:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.2,file_access,404,428,File /srv/app/config.yaml accessed by eve
+2025-11-05T20:56:02.859201+00:00,auth-service,fw-main,10.0.4.24,login,404,443,User trent login success
+2025-11-04T14:38:02.859201+00:00,auth-service,srv-app-2,10.0.4.14,login,401,412,User carol login failed
+2025-11-02T15:38:02.859201+00:00,db-server,srv-app-2,192.168.1.5,recon,403,490,Reconnaissance pattern detected for 192.168.1.5
+2025-11-04T17:16:02.859201+00:00,vpn-gateway,srv-db-1,192.168.2.2,firewall_allow,200,266,Firewall allowed traffic from 192.168.2.2
+2025-11-03T15:49:02.859201+00:00,auth-service,vpn-1,192.168.2.2,firewall_allow,403,790,Firewall allowed traffic from 192.168.2.2
+2025-10-30T12:06:02.859201+00:00,web-server,vpn-1,192.168.3.18,firewall_allow,500,129,Firewall allowed traffic from 192.168.3.18
+2025-10-30T06:42:02.859201+00:00,auth-service,srv-app-2,10.0.1.5,firewall_allow,503,321,Firewall allowed traffic from 10.0.1.5
+2025-11-01T05:45:02.859201+00:00,vpn-gateway,fw-main,10.0.1.16,file_access,400,421,File /srv/app/config.yaml accessed by trent
+2025-11-02T11:45:02.859201+00:00,firewall,vpn-1,10.0.4.16,recon,404,1584,Reconnaissance pattern detected for 10.0.4.16
+2025-11-01T22:16:02.859201+00:00,web-server,srv-app-2,10.0.3.24,firewall_allow,403,300,Firewall allowed traffic from 10.0.3.24
+2025-11-01T06:41:02.859201+00:00,firewall,srv-db-1,192.168.2.3,firewall_block,404,1043,Firewall blocked traffic from 192.168.2.3
+2025-11-02T00:45:02.859201+00:00,vpn-gateway,vpn-1,192.168.1.2,login,500,627,User bob login success
+2025-11-02T20:39:02.859201+00:00,db-server,fw-main,10.0.3.7,ddos,401,4736,Potential DDoS detected from 10.0.3.7
+2025-11-05T07:33:02.859201+00:00,web-server,srv-app-1,192.168.3.14,firewall_block,401,180,Firewall blocked traffic from 192.168.3.14
+2025-11-04T23:05:02.859201+00:00,web-server,srv-app-1,10.0.2.2,login,500,289,User carol login success
+2025-10-29T23:29:02.859201+00:00,web-server,fw-main,192.168.3.24,recon,503,391,Reconnaissance pattern detected for 192.168.3.24
+2025-11-02T04:31:02.859201+00:00,auth-service,srv-app-1,192.168.3.23,file_access,401,459,File /etc/passwd accessed by carol
+2025-11-03T16:11:02.859201+00:00,web-server,srv-app-1,192.168.1.6,sql_query,503,111,Query executed by eve on customers
+2025-10-30T00:36:02.859201+00:00,vpn-gateway,srv-app-1,10.0.4.14,login,403,353,User carol login success
+2025-11-04T15:46:02.859201+00:00,web-server,srv-app-1,10.0.4.13,file_access,400,793,File /var/log/auth.log accessed by alice
+2025-11-02T18:08:02.859201+00:00,vpn-gateway,srv-app-2,10.0.2.21,firewall_block,500,807,Firewall blocked traffic from 10.0.2.21
+2025-10-30T21:46:02.859201+00:00,auth-service,srv-app-2,10.0.2.12,file_access,503,316,File /home/alice/docs/report.pdf accessed by trent
+2025-11-01T14:23:02.859201+00:00,db-server,srv-db-1,10.0.4.6,file_access,200,275,File /var/log/auth.log accessed by alice
+2025-10-31T06:21:02.859201+00:00,web-server,fw-main,192.168.2.9,file_access,403,693,File /home/alice/docs/report.pdf accessed by mallory
+2025-11-05T21:55:02.859201+00:00,web-server,fw-main,10.0.2.16,login,503,770,User peggy login success
+2025-11-05T00:51:02.859201+00:00,web-server,srv-app-2,192.168.3.9,sql_query,201,426,Query executed by mallory on customers
+2025-11-05T08:08:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.4,login,400,334,User peggy login success
+2025-10-30T22:54:02.859201+00:00,firewall,srv-app-1,192.168.1.21,sql_query,400,413,Query executed by alice on inventory
+2025-11-02T10:14:02.859201+00:00,firewall,srv-db-1,10.0.1.1,firewall_block,401,438,Firewall blocked traffic from 10.0.1.1
+2025-11-02T20:09:02.859201+00:00,vpn-gateway,srv-app-1,10.0.1.18,firewall_block,503,178,Firewall blocked traffic from 10.0.1.18
+2025-10-31T11:03:02.859201+00:00,firewall,srv-db-1,192.168.1.2,firewall_block,503,269,Firewall blocked traffic from 192.168.1.2
+2025-11-05T01:20:02.859201+00:00,db-server,srv-app-1,10.0.2.22,login,500,449,User alice login success
+2025-10-30T04:17:02.859201+00:00,firewall,vpn-1,192.168.1.13,privilege_escalation,500,627,Privilege escalation attempt by mallory
+2025-10-31T16:26:02.859201+00:00,auth-service,srv-app-1,192.168.1.12,login,200,303,User peggy login success
+2025-11-05T17:19:02.859201+00:00,auth-service,srv-app-2,10.0.1.12,firewall_block,500,351,Firewall blocked traffic from 10.0.1.12
+2025-10-30T13:29:02.859201+00:00,db-server,srv-app-2,192.168.3.4,login,401,572,User dan login failed
+2025-11-02T08:29:02.859201+00:00,vpn-gateway,srv-app-2,192.168.1.10,sql_query,403,239,Query executed by carol on inventory
+2025-11-05T05:52:02.859201+00:00,db-server,fw-main,192.168.2.15,file_access,404,567,File /home/alice/docs/report.pdf accessed by trent
+2025-11-01T00:17:02.859201+00:00,firewall,srv-app-2,10.0.3.10,firewall_block,403,620,Firewall blocked traffic from 10.0.3.10
+2025-11-04T04:31:02.859201+00:00,vpn-gateway,fw-main,192.168.1.11,ddos,400,2555,Potential DDoS detected from 192.168.1.11
+2025-11-02T16:16:02.859201+00:00,firewall,srv-db-1,10.0.1.24,firewall_allow,401,192,Firewall allowed traffic from 10.0.1.24
+2025-11-05T19:16:02.859201+00:00,auth-service,srv-app-2,192.168.3.7,firewall_allow,401,342,Firewall allowed traffic from 192.168.3.7
+2025-11-02T17:00:02.859201+00:00,auth-service,srv-app-2,10.0.3.1,file_access,201,1134,File /var/log/auth.log accessed by dan
+2025-11-03T10:23:02.859201+00:00,vpn-gateway,srv-db-1,10.0.4.1,ddos,500,2700,Potential DDoS detected from 10.0.4.1
+2025-11-02T10:18:02.859201+00:00,vpn-gateway,fw-main,192.168.1.24,login,201,1240,User mallory login success
+2025-11-01T05:33:02.859201+00:00,firewall,srv-app-1,192.168.3.1,file_access,401,460,File /srv/app/config.yaml accessed by eve
+2025-10-31T15:42:02.859201+00:00,web-server,fw-main,192.168.3.2,login,401,402,User eve login success
+2025-11-04T11:30:02.859201+00:00,firewall,fw-main,10.0.2.20,recon,404,119,Reconnaissance pattern detected for 10.0.2.20
+2025-11-04T11:25:02.859201+00:00,vpn-gateway,srv-app-1,192.168.2.15,login,200,466,User dan login success
+2025-11-04T16:10:02.859201+00:00,auth-service,vpn-1,192.168.3.20,file_access,503,426,File /etc/passwd accessed by eve
+2025-11-05T00:22:02.859201+00:00,auth-service,vpn-1,192.168.1.15,privilege_escalation,400,257,Privilege escalation attempt by eve
+2025-11-02T22:52:02.859201+00:00,firewall,srv-app-1,10.0.4.24,login,500,381,User eve login success
+2025-10-30T20:05:02.859201+00:00,auth-service,srv-app-1,192.168.1.8,firewall_block,500,316,Firewall blocked traffic from 192.168.1.8
+2025-10-30T00:39:02.859201+00:00,auth-service,fw-main,192.168.1.16,firewall_block,404,650,Firewall blocked traffic from 192.168.1.16
+2025-10-31T00:07:02.859201+00:00,auth-service,srv-app-2,10.0.3.7,sql_query,503,525,Query executed by alice on transactions
+2025-11-02T11:57:02.859201+00:00,web-server,vpn-1,10.0.2.13,login,500,757,User trent login success
+2025-11-05T01:41:02.859201+00:00,web-server,srv-app-1,192.168.2.9,file_access,404,178,File /etc/passwd accessed by mallory
+2025-11-05T19:20:02.859201+00:00,vpn-gateway,fw-main,10.0.4.12,firewall_block,200,763,Firewall blocked traffic from 10.0.4.12
+2025-11-04T01:06:02.859201+00:00,db-server,vpn-1,192.168.1.1,file_access,500,184,File /srv/app/config.yaml accessed by bob
+2025-11-02T06:44:02.859201+00:00,auth-service,srv-app-1,10.0.3.21,firewall_block,400,227,Firewall blocked traffic from 10.0.3.21
+2025-10-31T16:12:02.859201+00:00,db-server,srv-db-1,10.0.2.4,firewall_block,201,331,Firewall blocked traffic from 10.0.2.4
+2025-10-31T10:15:02.859201+00:00,firewall,fw-main,192.168.2.23,login,500,463,User trent login success
+2025-10-30T01:27:02.859201+00:00,firewall,srv-app-1,192.168.2.24,login,401,441,User carol login success
+2025-11-01T23:30:02.859201+00:00,firewall,srv-app-2,10.0.1.17,file_access,400,359,File /srv/app/config.yaml accessed by bob
+2025-11-03T00:41:02.859201+00:00,web-server,fw-main,192.168.3.9,login,401,383,User trent login success
+2025-11-02T16:48:02.859201+00:00,firewall,srv-db-1,192.168.1.17,sql_query,404,269,Query executed by carol on logs
+2025-11-02T13:38:02.859201+00:00,web-server,fw-main,10.0.4.9,firewall_allow,400,199,Firewall allowed traffic from 10.0.4.9
+2025-11-04T12:09:02.859201+00:00,web-server,srv-db-1,192.168.1.1,recon,403,689,Reconnaissance pattern detected for 192.168.1.1
+2025-10-31T05:10:02.859201+00:00,web-server,vpn-1,192.168.2.20,recon,400,611,Reconnaissance pattern detected for 192.168.2.20
+2025-11-04T04:08:02.859201+00:00,web-server,fw-main,10.0.4.3,recon,201,334,Reconnaissance pattern detected for 10.0.4.3
+2025-11-02T08:46:02.859201+00:00,web-server,fw-main,192.168.1.1,login,201,354,User trent login success
+2025-11-05T02:32:02.859201+00:00,db-server,vpn-1,192.168.3.9,login,201,236,User carol login success
+2025-11-05T21:23:02.859201+00:00,firewall,srv-db-1,192.168.1.15,login,201,412,User dan login success
+2025-11-03T23:48:02.859201+00:00,firewall,vpn-1,192.168.2.9,file_access,400,342,File /etc/passwd accessed by eve
+2025-11-03T15:40:02.859201+00:00,auth-service,srv-app-1,10.0.2.13,ddos,404,2089,Potential DDoS detected from 10.0.2.13
+2025-11-01T06:34:02.859201+00:00,db-server,fw-main,10.0.2.1,firewall_allow,503,612,Firewall allowed traffic from 10.0.2.1
+2025-10-30T16:25:02.859201+00:00,auth-service,srv-app-1,10.0.4.16,file_access,201,501,File /var/log/auth.log accessed by carol
+2025-11-05T04:47:02.859201+00:00,vpn-gateway,fw-main,192.168.1.23,login,401,923,User trent login success
+2025-11-03T10:06:02.859201+00:00,vpn-gateway,srv-app-2,192.168.1.20,login,500,273,User bob login success
+2025-11-05T11:44:02.859201+00:00,vpn-gateway,srv-app-2,10.0.4.22,login,404,283,User peggy login success
+2025-11-04T22:11:02.859201+00:00,db-server,vpn-1,192.168.1.4,recon,500,462,Reconnaissance pattern detected for 192.168.1.4
+2025-11-04T03:06:02.859201+00:00,db-server,vpn-1,192.168.3.8,firewall_allow,201,522,Firewall allowed traffic from 192.168.3.8
+2025-11-01T15:13:02.859201+00:00,web-server,srv-db-1,10.0.2.13,file_access,500,365,File /srv/app/config.yaml accessed by trent
+2025-11-01T00:48:02.859201+00:00,vpn-gateway,srv-app-2,192.168.2.23,file_access,400,398,File /home/alice/docs/report.pdf accessed by peggy
+2025-10-30T12:43:02.859201+00:00,auth-service,fw-main,10.0.2.11,sql_query,401,407,Query executed by peggy on inventory
+2025-11-03T23:17:02.859201+00:00,auth-service,vpn-1,10.0.1.8,file_access,401,300,File /home/alice/docs/report.pdf accessed by carol
+2025-11-04T02:57:02.859201+00:00,firewall,vpn-1,192.168.2.11,firewall_allow,201,446,Firewall allowed traffic from 192.168.2.11
+2025-11-05T02:23:02.859201+00:00,db-server,vpn-1,10.0.1.11,sql_query,503,583,Query executed by alice on inventory
+2025-11-01T21:50:02.859201+00:00,auth-service,fw-main,10.0.2.7,file_access,401,129,File /home/alice/docs/report.pdf accessed by trent
+2025-10-31T19:24:02.859201+00:00,web-server,srv-app-2,10.0.1.16,firewall_allow,404,438,Firewall allowed traffic from 10.0.1.16
+2025-10-31T20:03:02.859201+00:00,db-server,srv-db-1,192.168.3.3,file_access,403,1052,File /etc/passwd accessed by carol
+2025-11-03T14:28:02.859201+00:00,db-server,srv-app-2,10.0.2.10,ddos,401,1742,Potential DDoS detected from 10.0.2.10
+2025-11-01T17:40:02.859201+00:00,firewall,fw-main,10.0.2.13,firewall_block,403,497,Firewall blocked traffic from 10.0.2.13
+2025-10-30T18:42:02.859201+00:00,auth-service,fw-main,192.168.2.12,firewall_allow,403,2066,Firewall allowed traffic from 192.168.2.12
+2025-11-04T02:14:02.859201+00:00,db-server,vpn-1,10.0.1.1,recon,201,625,Reconnaissance pattern detected for 10.0.1.1
+2025-11-02T23:54:02.859201+00:00,vpn-gateway,fw-main,10.0.3.8,sql_query,500,781,Query executed by mallory on logs
+2025-11-02T18:18:02.859201+00:00,web-server,vpn-1,192.168.2.5,firewall_allow,404,79,Firewall allowed traffic from 192.168.2.5
+2025-11-02T00:54:02.859201+00:00,db-server,srv-db-1,10.0.1.22,login,404,653,User eve login success
+2025-11-01T14:01:02.859201+00:00,auth-service,srv-app-1,10.0.1.1,file_access,401,392,File /var/log/auth.log accessed by peggy
+2025-10-30T00:37:02.859201+00:00,db-server,srv-app-1,192.168.1.13,login,400,391,User bob login success
+2025-10-31T02:15:02.859201+00:00,db-server,srv-app-2,192.168.1.2,file_access,400,633,File /etc/passwd accessed by alice
+2025-11-05T20:44:02.859201+00:00,firewall,srv-db-1,10.0.3.7,firewall_block,400,1243,Firewall blocked traffic from 10.0.3.7
+2025-11-03T22:53:02.859201+00:00,auth-service,srv-app-1,10.0.2.12,sql_query,201,468,Query executed by trent on logs
+2025-10-31T12:15:02.859201+00:00,auth-service,srv-app-2,192.168.2.22,login,401,1020,User eve login failed
+2025-11-01T06:11:02.859201+00:00,vpn-gateway,srv-app-2,192.168.1.5,firewall_allow,403,809,Firewall allowed traffic from 192.168.1.5
+2025-11-01T15:26:02.859201+00:00,auth-service,srv-app-2,192.168.2.8,file_access,201,1488,File /home/alice/docs/report.pdf accessed by mallory
+2025-10-31T10:07:02.859201+00:00,vpn-gateway,fw-main,10.0.4.22,file_access,400,220,File /etc/passwd accessed by alice
+2025-11-03T10:45:02.859201+00:00,vpn-gateway,fw-main,192.168.1.13,firewall_allow,500,159,Firewall allowed traffic from 192.168.1.13
+2025-10-31T15:46:02.859201+00:00,db-server,srv-app-1,192.168.2.11,login,401,262,User bob login success
+2025-11-02T10:46:02.859201+00:00,web-server,srv-app-1,10.0.3.15,firewall_block,201,455,Firewall blocked traffic from 10.0.3.15
+2025-10-31T22:02:02.859201+00:00,web-server,srv-app-1,10.0.2.18,login,503,1072,User eve login success
+2025-10-31T19:40:02.859201+00:00,db-server,srv-app-1,10.0.1.8,file_access,404,622,File /etc/passwd accessed by eve
+2025-11-05T11:32:02.859201+00:00,firewall,fw-main,192.168.2.11,firewall_allow,404,268,Firewall allowed traffic from 192.168.2.11
+2025-10-31T02:10:02.859201+00:00,auth-service,srv-app-2,192.168.2.11,sql_query,200,245,Query executed by trent on transactions
+2025-10-31T22:57:02.859201+00:00,auth-service,vpn-1,192.168.3.24,recon,500,276,Reconnaissance pattern detected for 192.168.3.24
+2025-11-02T13:26:02.859201+00:00,auth-service,vpn-1,10.0.4.24,login,201,412,User alice login success
+2025-11-03T11:33:02.859201+00:00,firewall,srv-db-1,10.0.4.8,login,404,184,User eve login success
+2025-11-05T08:02:02.859201+00:00,vpn-gateway,srv-app-2,192.168.1.23,firewall_block,404,486,Firewall blocked traffic from 192.168.1.23
+2025-11-01T03:26:02.859201+00:00,vpn-gateway,srv-app-2,10.0.2.15,firewall_block,200,453,Firewall blocked traffic from 10.0.2.15
+2025-10-30T00:42:02.859201+00:00,auth-service,fw-main,10.0.4.7,recon,201,50,Reconnaissance pattern detected for 10.0.4.7
+2025-10-31T12:57:02.859201+00:00,auth-service,srv-app-1,10.0.3.12,firewall_block,500,560,Firewall blocked traffic from 10.0.3.12
+2025-10-30T21:16:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.20,firewall_allow,500,146,Firewall allowed traffic from 192.168.3.20
+2025-11-03T20:51:02.859201+00:00,web-server,srv-app-2,10.0.4.3,firewall_block,403,209,Firewall blocked traffic from 10.0.4.3
+2025-11-02T15:10:02.859201+00:00,db-server,srv-app-2,10.0.1.20,file_access,401,374,File /etc/passwd accessed by mallory
+2025-11-01T06:46:02.859201+00:00,firewall,srv-db-1,10.0.2.7,file_access,201,131,File /etc/passwd accessed by dan
+2025-11-02T15:35:02.859201+00:00,web-server,srv-db-1,192.168.1.6,login,401,516,User alice login failed
+2025-11-03T12:30:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.16,sql_query,201,330,Query executed by carol on customers
+2025-10-30T01:20:02.859201+00:00,web-server,srv-app-2,10.0.3.3,login,500,282,User eve login success
+2025-10-30T18:33:02.859201+00:00,auth-service,srv-app-2,192.168.3.22,login,401,572,User mallory login failed
+2025-10-31T07:32:02.859201+00:00,firewall,srv-app-1,10.0.2.20,login,500,697,User trent login success
+2025-10-31T21:16:02.859201+00:00,web-server,srv-db-1,10.0.3.24,file_access,503,474,File /home/alice/docs/report.pdf accessed by peggy
+2025-11-03T14:35:02.859201+00:00,firewall,srv-app-1,10.0.1.23,sql_query,403,327,Query executed by dan on customers
+2025-11-03T06:31:02.859201+00:00,db-server,fw-main,192.168.2.20,firewall_block,503,278,Firewall blocked traffic from 192.168.2.20
+2025-11-02T13:54:02.859201+00:00,web-server,srv-app-1,10.0.4.10,file_access,401,124,File /srv/app/config.yaml accessed by mallory
+2025-11-05T13:33:02.859201+00:00,web-server,srv-app-1,10.0.3.16,malware_detected,401,109,Malware signature detected on srv-app-1
+2025-10-30T13:21:02.859201+00:00,web-server,vpn-1,192.168.1.4,firewall_block,404,259,Firewall blocked traffic from 192.168.1.4
+2025-11-02T12:55:02.859201+00:00,db-server,vpn-1,10.0.1.8,sql_query,404,1159,Query executed by dan on inventory
+2025-11-05T02:07:02.859201+00:00,firewall,srv-app-1,10.0.1.24,file_access,200,283,File /srv/app/config.yaml accessed by alice
+2025-11-02T16:40:02.859201+00:00,web-server,srv-app-2,10.0.4.16,ddos,400,8751,Potential DDoS detected from 10.0.4.16
+2025-10-31T04:22:02.859201+00:00,db-server,srv-app-1,10.0.4.24,sql_query,500,461,Query executed by mallory on transactions
+2025-10-31T17:05:02.859201+00:00,firewall,fw-main,192.168.3.23,firewall_block,404,590,Firewall blocked traffic from 192.168.3.23
+2025-11-05T14:54:02.859201+00:00,firewall,srv-db-1,10.0.4.4,sql_query,400,656,Query executed by alice on transactions
+2025-11-05T18:34:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.20,file_access,201,561,File /home/alice/docs/report.pdf accessed by carol
+2025-10-30T22:18:02.859201+00:00,db-server,fw-main,10.0.1.3,sql_query,403,152,Query executed by mallory on logs
+2025-10-31T03:35:02.859201+00:00,auth-service,fw-main,192.168.1.17,firewall_block,500,398,Firewall blocked traffic from 192.168.1.17
+2025-11-05T03:11:02.859201+00:00,firewall,vpn-1,192.168.3.23,file_access,401,668,File /home/alice/docs/report.pdf accessed by eve
+2025-10-31T02:40:02.859201+00:00,web-server,fw-main,10.0.2.18,login,201,648,User peggy login success
+2025-10-30T06:32:02.859201+00:00,web-server,vpn-1,192.168.1.16,file_access,400,202,File /var/log/auth.log accessed by trent
+2025-11-05T05:23:02.859201+00:00,vpn-gateway,srv-db-1,10.0.4.1,firewall_block,403,639,Firewall blocked traffic from 10.0.4.1
+2025-10-31T16:01:02.859201+00:00,auth-service,fw-main,10.0.1.23,login,403,981,User bob login success
+2025-10-30T05:06:02.859201+00:00,db-server,srv-app-1,192.168.2.2,login,201,290,User eve login success
+2025-10-30T22:58:02.859201+00:00,firewall,srv-app-2,10.0.4.23,firewall_allow,500,316,Firewall allowed traffic from 10.0.4.23
+2025-11-01T21:58:02.859201+00:00,db-server,srv-app-2,10.0.3.21,file_access,200,123,File /etc/passwd accessed by bob
+2025-11-02T19:57:02.859201+00:00,firewall,vpn-1,10.0.3.11,sql_query,200,336,Query executed by peggy on transactions
+2025-11-04T08:08:02.859201+00:00,firewall,srv-app-1,192.168.2.9,login,401,206,User trent login failed
+2025-11-01T05:13:02.859201+00:00,web-server,vpn-1,10.0.3.19,malware_detected,404,194,Malware signature detected on vpn-1
+2025-11-03T10:35:02.859201+00:00,db-server,vpn-1,192.168.1.22,firewall_allow,200,882,Firewall allowed traffic from 192.168.1.22
+2025-11-04T20:46:02.859201+00:00,auth-service,fw-main,10.0.2.15,firewall_block,400,475,Firewall blocked traffic from 10.0.2.15
+2025-10-31T01:26:02.859201+00:00,vpn-gateway,srv-app-1,10.0.4.2,ddos,404,5057,Potential DDoS detected from 10.0.4.2
+2025-11-04T10:40:02.859201+00:00,firewall,srv-app-1,10.0.2.21,firewall_allow,403,310,Firewall allowed traffic from 10.0.2.21
+2025-11-03T11:46:02.859201+00:00,db-server,srv-app-2,10.0.1.13,login,503,304,User bob login success
+2025-11-01T12:19:02.859201+00:00,firewall,srv-db-1,10.0.3.21,login,500,454,User trent login success
+2025-11-04T10:22:02.859201+00:00,db-server,srv-app-1,192.168.2.12,firewall_block,400,256,Firewall blocked traffic from 192.168.2.12
+2025-11-04T21:14:02.859201+00:00,auth-service,srv-app-2,10.0.3.2,sql_query,401,640,Query executed by peggy on customers
+2025-11-03T00:29:02.859201+00:00,db-server,srv-db-1,192.168.1.23,firewall_block,500,472,Firewall blocked traffic from 192.168.1.23
+2025-10-30T06:25:02.859201+00:00,firewall,vpn-1,192.168.1.19,login,400,994,User mallory login success
+2025-10-31T18:44:02.859201+00:00,db-server,srv-app-1,10.0.4.1,sql_query,200,350,Query executed by dan on transactions
+2025-11-01T11:33:02.859201+00:00,db-server,fw-main,192.168.2.12,firewall_block,200,576,Firewall blocked traffic from 192.168.2.12
+2025-10-31T10:12:02.859201+00:00,vpn-gateway,srv-app-1,10.0.3.10,firewall_allow,403,2854,Firewall allowed traffic from 10.0.3.10
+2025-11-02T01:16:02.859201+00:00,firewall,srv-db-1,192.168.1.22,file_access,403,266,File /srv/app/config.yaml accessed by bob
+2025-10-30T00:05:02.859201+00:00,db-server,vpn-1,192.168.3.22,firewall_allow,403,319,Firewall allowed traffic from 192.168.3.22
+2025-10-30T15:30:02.859201+00:00,db-server,srv-db-1,10.0.3.23,file_access,403,488,File /var/log/auth.log accessed by alice
+2025-11-05T17:55:02.859201+00:00,db-server,srv-app-2,10.0.1.7,file_access,503,351,File /etc/passwd accessed by dan
+2025-11-02T19:47:02.859201+00:00,web-server,vpn-1,192.168.3.20,firewall_block,503,423,Firewall blocked traffic from 192.168.3.20
+2025-11-05T06:31:02.859201+00:00,auth-service,fw-main,10.0.2.9,login,401,682,User mallory login failed
+2025-10-30T22:28:02.859201+00:00,web-server,srv-db-1,192.168.1.12,login,404,293,User bob login success
+2025-11-04T06:34:02.859201+00:00,vpn-gateway,vpn-1,192.168.3.15,login,201,389,User trent login success
+2025-11-04T22:45:02.859201+00:00,auth-service,srv-app-2,10.0.2.12,login,401,329,User dan login success
+2025-10-31T20:07:02.859201+00:00,web-server,fw-main,10.0.1.23,firewall_allow,400,556,Firewall allowed traffic from 10.0.1.23
+2025-11-03T12:14:02.859201+00:00,firewall,fw-main,10.0.1.2,file_access,200,459,File /etc/passwd accessed by mallory
+2025-11-04T23:05:02.859201+00:00,auth-service,srv-app-2,10.0.3.10,login,404,325,User eve login success
+2025-10-31T19:41:02.859201+00:00,auth-service,srv-db-1,10.0.4.3,login,503,721,User carol login success
+2025-11-02T19:40:02.859201+00:00,firewall,srv-db-1,10.0.3.1,malware_detected,400,354,Malware signature detected on srv-db-1
+2025-10-31T09:54:02.859201+00:00,auth-service,vpn-1,192.168.2.10,login,400,652,User alice login success
+2025-11-05T16:15:02.859201+00:00,auth-service,srv-app-1,10.0.1.13,malware_detected,201,351,Malware signature detected on srv-app-1
+2025-11-05T03:31:02.859201+00:00,web-server,srv-app-2,192.168.3.18,login,200,220,User eve login success
+2025-11-05T19:27:02.859201+00:00,firewall,srv-app-1,192.168.2.11,firewall_block,201,142,Firewall blocked traffic from 192.168.2.11
+2025-11-04T13:59:02.859201+00:00,web-server,srv-db-1,192.168.2.14,login,401,314,User peggy login success
+2025-11-01T06:47:02.859201+00:00,firewall,srv-db-1,10.0.3.13,firewall_block,200,157,Firewall blocked traffic from 10.0.3.13
+2025-11-04T13:00:02.859201+00:00,auth-service,vpn-1,10.0.1.20,login,201,1301,User eve login success
+2025-11-01T22:12:02.859201+00:00,auth-service,srv-app-2,10.0.1.11,file_access,403,258,File /srv/app/config.yaml accessed by bob
+2025-10-31T00:01:02.859201+00:00,auth-service,srv-app-1,10.0.2.12,sql_query,400,75,Query executed by eve on customers
+2025-11-03T03:50:02.859201+00:00,web-server,srv-app-1,192.168.1.7,sql_query,500,775,Query executed by trent on inventory
+2025-11-03T17:14:02.859201+00:00,web-server,srv-app-1,10.0.2.10,firewall_allow,200,387,Firewall allowed traffic from 10.0.2.10
+2025-11-03T21:43:02.859201+00:00,firewall,srv-db-1,192.168.3.13,login,401,389,User peggy login failed
+2025-10-30T10:38:02.859201+00:00,db-server,srv-app-1,192.168.2.15,login,401,284,User bob login success
+2025-11-03T20:16:02.859201+00:00,web-server,fw-main,10.0.4.17,firewall_block,500,1144,Firewall blocked traffic from 10.0.4.17
+2025-10-30T01:15:02.859201+00:00,web-server,vpn-1,192.168.2.1,firewall_allow,503,398,Firewall allowed traffic from 192.168.2.1
+2025-11-02T02:02:02.859201+00:00,web-server,vpn-1,192.168.3.21,login,500,354,User peggy login success
+2025-10-30T22:07:02.859201+00:00,firewall,srv-db-1,10.0.2.7,sql_query,503,363,Query executed by alice on customers
+2025-11-05T19:04:02.859201+00:00,db-server,vpn-1,192.168.2.24,recon,401,540,Reconnaissance pattern detected for 192.168.2.24
+2025-11-02T19:09:02.859201+00:00,auth-service,srv-app-2,192.168.1.21,file_access,404,474,File /srv/app/config.yaml accessed by mallory
+2025-11-04T01:39:02.859201+00:00,web-server,srv-app-1,10.0.4.16,login,404,257,User alice login success
+2025-10-31T18:54:02.859201+00:00,firewall,srv-app-1,10.0.3.18,file_access,401,329,File /var/log/auth.log accessed by mallory
+2025-10-31T03:30:02.859201+00:00,auth-service,vpn-1,10.0.2.8,firewall_block,503,362,Firewall blocked traffic from 10.0.2.8
+2025-11-04T15:45:02.859201+00:00,firewall,srv-app-1,192.168.2.16,login,200,444,User carol login success
+2025-11-05T12:04:02.859201+00:00,web-server,srv-app-1,192.168.1.4,login,401,406,User dan login failed
+2025-11-02T00:47:02.859201+00:00,db-server,srv-db-1,192.168.1.20,file_access,400,158,File /home/alice/docs/report.pdf accessed by mallory
+2025-11-05T05:14:02.859201+00:00,web-server,srv-app-2,192.168.3.16,firewall_allow,403,109,Firewall allowed traffic from 192.168.3.16
+2025-10-31T22:38:02.859201+00:00,db-server,srv-app-1,10.0.4.19,firewall_allow,503,1784,Firewall allowed traffic from 10.0.4.19
+2025-11-03T16:04:02.859201+00:00,vpn-gateway,srv-db-1,192.168.1.13,firewall_block,200,413,Firewall blocked traffic from 192.168.1.13
+2025-10-31T13:46:02.859201+00:00,auth-service,srv-app-2,10.0.3.21,login,400,582,User mallory login success
+2025-11-04T01:40:02.859201+00:00,vpn-gateway,srv-app-2,192.168.3.22,login,500,115,User eve login success
+2025-10-30T10:54:02.859201+00:00,firewall,fw-main,10.0.4.9,ddos,200,5252,Potential DDoS detected from 10.0.4.9
+2025-11-03T23:04:02.859201+00:00,db-server,vpn-1,192.168.2.20,sql_query,401,311,Query executed by bob on transactions
+2025-10-31T21:32:02.859201+00:00,auth-service,fw-main,10.0.1.11,firewall_block,500,296,Firewall blocked traffic from 10.0.1.11
+2025-10-31T18:01:02.859201+00:00,db-server,srv-app-1,10.0.4.13,firewall_allow,503,520,Firewall allowed traffic from 10.0.4.13
+2025-10-31T16:03:02.859201+00:00,vpn-gateway,srv-app-1,192.168.3.17,ddos,403,2913,Potential DDoS detected from 192.168.3.17
+2025-11-02T23:51:02.859201+00:00,db-server,vpn-1,10.0.3.9,login,400,445,User trent login success
+2025-10-30T23:11:02.859201+00:00,web-server,srv-db-1,10.0.4.13,file_access,404,508,File /etc/passwd accessed by bob
+2025-11-02T20:33:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.15,file_access,200,532,File /etc/passwd accessed by trent
+2025-11-01T20:08:02.859201+00:00,db-server,srv-app-1,192.168.2.13,firewall_allow,404,415,Firewall allowed traffic from 192.168.2.13
+2025-11-04T11:00:02.859201+00:00,web-server,srv-db-1,192.168.2.12,login,201,1114,User bob login success
+2025-11-01T07:38:02.859201+00:00,web-server,fw-main,10.0.2.3,firewall_block,401,459,Firewall blocked traffic from 10.0.2.3
+2025-11-03T20:55:02.859201+00:00,auth-service,srv-app-2,10.0.1.7,firewall_allow,503,508,Firewall allowed traffic from 10.0.1.7
+2025-10-30T18:05:02.859201+00:00,db-server,vpn-1,10.0.1.19,login,401,823,User trent login success
+2025-11-03T20:19:02.859201+00:00,firewall,srv-app-1,192.168.2.17,file_access,200,590,File /etc/passwd accessed by bob
+2025-11-02T23:45:02.859201+00:00,auth-service,srv-db-1,10.0.4.6,ddos,201,1500,Potential DDoS detected from 10.0.4.6
+2025-10-30T06:29:02.859201+00:00,vpn-gateway,srv-app-2,10.0.2.11,file_access,500,226,File /home/alice/docs/report.pdf accessed by mallory
+2025-10-30T01:07:02.859201+00:00,vpn-gateway,srv-app-2,10.0.2.8,firewall_allow,200,829,Firewall allowed traffic from 10.0.2.8
+2025-11-02T09:17:02.859201+00:00,db-server,srv-app-2,192.168.1.10,login,401,257,User dan login failed
+2025-10-31T05:22:02.859201+00:00,vpn-gateway,srv-app-1,192.168.2.21,login,503,473,User eve login success
+2025-10-31T00:53:02.859201+00:00,vpn-gateway,fw-main,10.0.4.13,login,404,132,User bob login success
+2025-11-01T02:55:02.859201+00:00,firewall,srv-db-1,192.168.3.14,file_access,403,510,File /home/alice/docs/report.pdf accessed by mallory
+2025-11-03T19:02:02.859201+00:00,db-server,srv-app-2,10.0.3.9,login,500,281,User mallory login success
+2025-11-04T09:08:02.859201+00:00,db-server,srv-db-1,192.168.2.5,file_access,201,172,File /home/alice/docs/report.pdf accessed by carol
+2025-11-05T01:09:02.859201+00:00,auth-service,srv-app-1,10.0.1.5,login,200,866,User dan login success
+2025-10-30T08:05:02.859201+00:00,vpn-gateway,vpn-1,192.168.2.1,firewall_allow,400,337,Firewall allowed traffic from 192.168.2.1
+2025-11-05T15:05:02.859201+00:00,db-server,srv-app-2,192.168.1.23,firewall_block,201,325,Firewall blocked traffic from 192.168.1.23
+2025-11-01T15:18:02.859201+00:00,vpn-gateway,srv-app-2,192.168.2.12,sql_query,400,377,Query executed by carol on inventory
+2025-11-03T00:03:02.859201+00:00,firewall,srv-app-2,10.0.1.17,login,403,350,User mallory login success
+2025-11-03T08:03:02.859201+00:00,firewall,srv-app-1,10.0.1.11,file_access,404,487,File /home/alice/docs/report.pdf accessed by carol
+2025-11-03T04:56:02.859201+00:00,db-server,vpn-1,192.168.3.24,firewall_block,201,414,Firewall blocked traffic from 192.168.3.24
+2025-11-01T10:56:02.859201+00:00,db-server,srv-db-1,192.168.2.5,firewall_allow,503,814,Firewall allowed traffic from 192.168.2.5
+2025-11-01T12:53:02.859201+00:00,db-server,srv-app-2,10.0.2.15,login,401,166,User dan login failed
+2025-11-03T15:18:02.859201+00:00,auth-service,fw-main,192.168.2.3,sql_query,503,282,Query executed by trent on customers
+2025-11-01T16:37:02.859201+00:00,vpn-gateway,vpn-1,10.0.2.18,login,400,463,User alice login success
+2025-10-31T19:30:02.859201+00:00,web-server,vpn-1,192.168.1.8,login,200,192,User peggy login success
+2025-10-31T20:39:02.859201+00:00,firewall,vpn-1,10.0.2.13,login,400,522,User mallory login success
+2025-11-04T01:54:02.859201+00:00,auth-service,srv-app-2,192.168.1.1,firewall_allow,500,522,Firewall allowed traffic from 192.168.1.1
+2025-11-03T16:42:02.859201+00:00,vpn-gateway,srv-app-1,10.0.2.22,sql_query,503,1133,Query executed by bob on customers
+2025-11-04T09:46:02.859201+00:00,vpn-gateway,vpn-1,10.0.1.1,firewall_block,500,418,Firewall blocked traffic from 10.0.1.1
+2025-10-30T09:56:02.859201+00:00,firewall,srv-app-2,192.168.2.4,firewall_block,500,183,Firewall blocked traffic from 192.168.2.4
+2025-11-05T11:24:02.859201+00:00,web-server,srv-db-1,192.168.2.3,login,401,503,User alice login success
+2025-10-30T00:01:02.859201+00:00,auth-service,vpn-1,10.0.1.2,firewall_allow,500,671,Firewall allowed traffic from 10.0.1.2
+2025-11-02T12:20:02.859201+00:00,auth-service,srv-app-2,192.168.1.14,file_access,403,237,File /home/alice/docs/report.pdf accessed by eve
+2025-11-03T10:36:02.859201+00:00,firewall,vpn-1,192.168.2.23,firewall_block,503,190,Firewall blocked traffic from 192.168.2.23
+2025-11-04T10:10:02.859201+00:00,db-server,vpn-1,10.0.4.17,login,500,772,User carol login success
+2025-10-31T01:27:02.859201+00:00,firewall,srv-db-1,192.168.2.21,login,200,375,User bob login success
+2025-11-05T20:23:02.859201+00:00,firewall,fw-main,192.168.3.14,login,401,693,User carol login failed
+2025-11-04T13:04:02.859201+00:00,web-server,vpn-1,10.0.4.2,file_access,401,412,File /var/log/auth.log accessed by alice
+2025-11-03T00:18:02.859201+00:00,auth-service,srv-app-2,10.0.1.23,login,403,629,User dan login success
+2025-11-04T19:27:02.859201+00:00,auth-service,srv-app-1,192.168.2.21,login,403,683,User mallory login success
+2025-11-02T01:35:02.859201+00:00,web-server,fw-main,192.168.1.8,login,200,266,User bob login success
+2025-11-04T15:28:02.859201+00:00,auth-service,vpn-1,10.0.3.18,login,403,535,User peggy login success
+2025-11-04T03:53:02.859201+00:00,auth-service,fw-main,10.0.2.6,sql_query,403,268,Query executed by mallory on customers
+2025-11-01T21:59:02.859201+00:00,auth-service,fw-main,10.0.4.16,login,201,431,User dan login success
+2025-11-05T10:44:02.859201+00:00,web-server,fw-main,10.0.3.4,login,401,276,User mallory login success
+2025-10-31T16:40:02.859201+00:00,auth-service,srv-app-1,192.168.2.7,firewall_block,200,730,Firewall blocked traffic from 192.168.2.7
+2025-10-30T09:37:02.859201+00:00,db-server,vpn-1,10.0.4.9,sql_query,503,448,Query executed by carol on logs
+2025-11-03T10:43:02.859201+00:00,vpn-gateway,srv-app-2,10.0.1.14,login,500,384,User trent login success
+2025-10-31T21:48:02.859201+00:00,auth-service,vpn-1,192.168.1.22,file_access,404,198,File /home/alice/docs/report.pdf accessed by mallory
+2025-11-05T21:24:02.859201+00:00,web-server,vpn-1,10.0.3.20,sql_query,401,330,Query executed by trent on transactions
+2025-11-03T16:31:02.859201+00:00,db-server,srv-db-1,192.168.1.7,firewall_block,403,358,Firewall blocked traffic from 192.168.1.7
+2025-11-05T11:20:02.859201+00:00,auth-service,srv-db-1,10.0.3.13,firewall_block,500,636,Firewall blocked traffic from 10.0.3.13
+2025-10-31T14:55:02.859201+00:00,auth-service,srv-app-2,192.168.1.12,file_access,503,538,File /home/alice/docs/report.pdf accessed by peggy
+2025-11-02T08:00:02.859201+00:00,vpn-gateway,srv-app-1,192.168.1.6,login,401,497,User peggy login failed
+2025-10-31T00:22:02.859201+00:00,db-server,srv-db-1,10.0.4.21,file_access,404,1003,File /home/alice/docs/report.pdf accessed by mallory
+2025-10-30T03:29:02.859201+00:00,db-server,vpn-1,10.0.3.3,file_access,400,804,File /home/alice/docs/report.pdf accessed by peggy
+2025-11-04T00:07:02.859201+00:00,firewall,vpn-1,10.0.4.2,sql_query,503,472,Query executed by carol on logs
+2025-11-03T17:16:02.859201+00:00,vpn-gateway,fw-main,10.0.1.19,firewall_allow,201,257,Firewall allowed traffic from 10.0.1.19
+2025-11-02T12:36:02.859201+00:00,db-server,vpn-1,192.168.3.22,firewall_block,500,263,Firewall blocked traffic from 192.168.3.22
+2025-11-03T01:15:02.859201+00:00,vpn-gateway,fw-main,192.168.1.10,firewall_block,400,807,Firewall blocked traffic from 192.168.1.10
+2025-10-30T19:56:02.859201+00:00,firewall,srv-app-1,10.0.2.1,login,201,947,User trent login success
+2025-11-04T21:09:02.859201+00:00,auth-service,srv-app-1,10.0.3.20,firewall_block,400,348,Firewall blocked traffic from 10.0.3.20
+2025-11-02T03:40:02.859201+00:00,web-server,srv-app-2,192.168.2.15,file_access,400,699,File /srv/app/config.yaml accessed by peggy
+2025-11-05T01:41:02.859201+00:00,vpn-gateway,fw-main,10.0.2.11,recon,400,479,Reconnaissance pattern detected for 10.0.2.11
+2025-11-05T08:05:02.859201+00:00,vpn-gateway,srv-db-1,10.0.4.17,file_access,503,497,File /srv/app/config.yaml accessed by eve
+2025-11-03T01:57:02.859201+00:00,web-server,srv-db-1,10.0.1.3,file_access,200,445,File /var/log/auth.log accessed by mallory
+2025-11-02T04:23:02.859201+00:00,auth-service,fw-main,192.168.2.3,file_access,403,166,File /home/alice/docs/report.pdf accessed by dan
+2025-10-30T00:03:02.859201+00:00,web-server,fw-main,192.168.2.24,firewall_allow,500,354,Firewall allowed traffic from 192.168.2.24
+2025-11-03T08:30:02.859201+00:00,web-server,srv-db-1,10.0.1.21,sql_query,500,526,Query executed by eve on logs
+2025-11-04T23:20:02.859201+00:00,firewall,srv-app-2,10.0.1.18,sql_query,400,370,Query executed by peggy on transactions
+2025-11-02T13:38:02.859201+00:00,auth-service,vpn-1,10.0.1.6,login,400,794,User peggy login success
+2025-10-30T00:19:02.859201+00:00,web-server,srv-app-1,192.168.2.7,login,401,318,User mallory login success
+2025-11-04T04:42:02.859201+00:00,auth-service,srv-db-1,10.0.1.21,firewall_block,400,175,Firewall blocked traffic from 10.0.1.21
+2025-11-01T02:33:02.859201+00:00,db-server,fw-main,10.0.1.4,sql_query,201,125,Query executed by bob on transactions
+2025-11-04T07:11:02.859201+00:00,db-server,srv-db-1,10.0.2.17,file_access,200,705,File /etc/passwd accessed by eve
+2025-11-04T09:29:02.859201+00:00,web-server,srv-db-1,10.0.1.14,firewall_allow,401,376,Firewall allowed traffic from 10.0.1.14
+2025-11-02T01:28:02.859201+00:00,firewall,srv-app-2,10.0.1.3,firewall_allow,200,528,Firewall allowed traffic from 10.0.1.3
+2025-11-05T16:53:02.859201+00:00,auth-service,srv-app-2,10.0.2.17,login,401,133,User alice login failed
+2025-10-30T14:24:02.859201+00:00,web-server,vpn-1,10.0.2.4,file_access,400,396,File /home/alice/docs/report.pdf accessed by peggy
+2025-11-01T02:46:02.859201+00:00,firewall,srv-db-1,10.0.2.11,login,403,895,User eve login success
+2025-11-05T02:17:02.859201+00:00,web-server,vpn-1,10.0.2.24,firewall_block,404,286,Firewall blocked traffic from 10.0.2.24
+2025-11-05T17:33:02.859201+00:00,vpn-gateway,srv-app-2,10.0.1.18,ddos,400,2233,Potential DDoS detected from 10.0.1.18
+2025-11-05T01:58:02.859201+00:00,auth-service,vpn-1,192.168.1.2,file_access,400,1137,File /home/alice/docs/report.pdf accessed by dan
+2025-11-02T13:39:02.859201+00:00,vpn-gateway,fw-main,10.0.3.1,firewall_block,503,557,Firewall blocked traffic from 10.0.3.1
+2025-11-02T03:23:02.859201+00:00,db-server,srv-app-1,10.0.2.1,file_access,201,244,File /etc/passwd accessed by trent
+2025-11-04T11:51:02.859201+00:00,vpn-gateway,srv-db-1,10.0.1.13,firewall_allow,404,145,Firewall allowed traffic from 10.0.1.13
+2025-10-30T01:39:02.859201+00:00,web-server,fw-main,10.0.1.21,recon,503,1061,Reconnaissance pattern detected for 10.0.1.21
+2025-11-03T15:39:02.859201+00:00,auth-service,vpn-1,10.0.3.21,sql_query,200,1731,Query executed by bob on transactions
+2025-11-04T19:56:02.859201+00:00,web-server,vpn-1,192.168.1.3,login,401,160,User carol login success
+2025-11-05T06:34:02.859201+00:00,firewall,srv-app-1,192.168.3.20,firewall_block,404,737,Firewall blocked traffic from 192.168.3.20
+2025-11-03T18:42:02.859201+00:00,web-server,srv-app-2,192.168.2.21,sql_query,500,409,Query executed by peggy on logs
+2025-11-02T12:08:02.859201+00:00,db-server,srv-db-1,192.168.1.10,firewall_allow,500,662,Firewall allowed traffic from 192.168.1.10
+2025-11-01T15:48:02.859201+00:00,web-server,fw-main,192.168.2.21,firewall_allow,403,310,Firewall allowed traffic from 192.168.2.21
+2025-11-03T10:30:02.859201+00:00,auth-service,srv-db-1,192.168.3.9,login,200,301,User mallory login success
+2025-10-30T04:00:02.859201+00:00,db-server,vpn-1,192.168.2.11,firewall_block,400,186,Firewall blocked traffic from 192.168.2.11
+2025-10-31T16:42:02.859201+00:00,db-server,vpn-1,10.0.3.16,login,401,281,User dan login success
+2025-10-30T19:09:02.859201+00:00,firewall,srv-app-2,192.168.2.5,firewall_block,201,464,Firewall blocked traffic from 192.168.2.5
+2025-11-05T11:26:02.859201+00:00,auth-service,srv-db-1,10.0.4.18,file_access,500,210,File /var/log/auth.log accessed by alice
+2025-11-03T06:31:02.859201+00:00,vpn-gateway,srv-app-1,10.0.4.10,login,400,223,User trent login success
+2025-11-03T23:45:02.859201+00:00,vpn-gateway,vpn-1,10.0.1.24,firewall_block,401,290,Firewall blocked traffic from 10.0.1.24
+2025-10-31T14:30:02.859201+00:00,auth-service,fw-main,192.168.3.3,login,200,431,User trent login success
+2025-10-31T09:41:02.859201+00:00,firewall,vpn-1,10.0.3.3,firewall_block,503,313,Firewall blocked traffic from 10.0.3.3
+2025-11-05T07:19:02.859201+00:00,vpn-gateway,srv-app-2,10.0.3.15,firewall_allow,201,264,Firewall allowed traffic from 10.0.3.15
+2025-11-05T11:22:02.859201+00:00,firewall,fw-main,10.0.4.22,login,404,248,User eve login success
+2025-10-31T20:18:02.859201+00:00,vpn-gateway,fw-main,192.168.3.16,privilege_escalation,400,179,Privilege escalation attempt by dan
+2025-11-01T04:36:02.859201+00:00,web-server,srv-app-1,10.0.2.5,firewall_block,200,200,Firewall blocked traffic from 10.0.2.5
+2025-10-31T14:24:02.859201+00:00,db-server,srv-app-1,10.0.4.16,sql_query,201,276,Query executed by mallory on transactions
+2025-11-05T00:59:02.859201+00:00,vpn-gateway,vpn-1,10.0.3.19,login,503,738,User alice login success
+2025-11-01T19:50:02.859201+00:00,db-server,srv-app-2,192.168.3.15,login,403,176,User mallory login success
+2025-10-31T03:32:02.859201+00:00,firewall,srv-app-2,192.168.1.2,login,201,903,User bob login success
