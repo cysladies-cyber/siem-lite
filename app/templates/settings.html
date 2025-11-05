@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Settings</h3>
+<p class="text-muted">Update thresholds and email configuration. Changes are stored in the running session.</p>
+<form id="settings-form" class="row g-3">
+  <div class="col-md-4">
+    <label class="form-label">Anomaly Threshold</label>
+    <input type="number" step="0.01" class="form-control" name="ANOMALY_THRESHOLD">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Alert Rate Threshold</label>
+    <input type="number" step="0.01" class="form-control" name="ALERT_RATE_THRESHOLD">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Alert Count Threshold</label>
+    <input type="number" class="form-control" name="ALERT_COUNT_THRESHOLD">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Model Train Window</label>
+    <input type="number" class="form-control" name="MODEL_TRAIN_WINDOW">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">SMTP Host</label>
+    <input type="text" class="form-control" name="SMTP_HOST">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">SMTP Port</label>
+    <input type="number" class="form-control" name="SMTP_PORT">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">SMTP User</label>
+    <input type="text" class="form-control" name="SMTP_USER">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">SMTP Password</label>
+    <input type="password" class="form-control" name="SMTP_PASSWORD">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">From Email</label>
+    <input type="email" class="form-control" name="SMTP_FROM">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">To Email</label>
+    <input type="email" class="form-control" name="SMTP_TO">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Save</button>
+  </div>
+</form>
+{% endblock %}
+{% block scripts %}
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    window.SIEM.initSettings();
+  });
+</script>
+{% endblock %}

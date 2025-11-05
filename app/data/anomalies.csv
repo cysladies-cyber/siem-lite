@@ -1,0 +1,1 @@
+timestamp,source,host,ip,event_type,status_code,bytes,message,anomaly_score,is_anomaly

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex flex-wrap gap-3" id="kpi-cards">
+  <div class="card kpi-card flex-fill">
+    <div class="card-body">
+      <h6>Total Logs</h6>
+      <p class="display-6" id="kpi-total">0</p>
+    </div>
+  </div>
+  <div class="card kpi-card flex-fill">
+    <div class="card-body">
+      <h6>Anomalies Today</h6>
+      <p class="display-6 text-danger" id="kpi-anomalies">0</p>
+    </div>
+  </div>
+  <div class="card kpi-card flex-fill">
+    <div class="card-body">
+      <h6>Anomaly Rate</h6>
+      <p class="display-6" id="kpi-rate">0%</p>
+    </div>
+  </div>
+  <div class="card kpi-card flex-fill">
+    <div class="card-body">
+      <h6>Last Alert</h6>
+      <p class="lead" id="kpi-alert">-</p>
+    </div>
+  </div>
+</div>
+<div class="mt-4 row">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <span>Logs vs Anomalies</span>
+        <div class="btn-group btn-group-sm" role="group">
+          <button class="btn btn-outline-secondary active" data-range="24h">24h</button>
+          <button class="btn btn-outline-secondary" data-range="7d">7d</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <canvas id="chart-trend" height="120"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card mb-3">
+      <div class="card-header">Top Event Types</div>
+      <div class="card-body">
+        <canvas id="chart-events" height="200"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Top Source IPs</div>
+      <div class="card-body">
+        <canvas id="chart-ips" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mt-4" id="anomalies">
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span>Recent Alerts</span>
+      <div>
+        {% if session.get('user') and session['user']['role'] == 'admin' %}
+        <button id="btn-detect" class="btn btn-sm btn-primary">Run Detection</button>
+        <button id="btn-alert-test" class="btn btn-sm btn-outline-secondary">Send Test Alert</button>
+        {% endif %}
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-hover mb-0" id="alerts-table">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>IP</th>
+            <th>Event</th>
+            <th>Score</th>
+            <th>Severity</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    window.SIEM.initDashboard();
+  });
+</script>
+{% endblock %}
