@@ -1,0 +1,21 @@
+timestamp,source,host,ip,event_type,status_code,bytes,message
+2024-04-07T08:05:12Z,auth,web01,192.168.1.21,login,200,512,User admin@example.com authenticated successfully
+2024-04-07T08:06:45Z,auth,web01,192.168.1.87,login,401,256,Failed login attempt for user analyst
+2024-04-07T08:07:02Z,firewall,edge-fw,10.0.0.8,firewall_block,403,128,Blocked incoming SSH connection from 198.51.100.27
+2024-04-07T08:07:30Z,firewall,edge-fw,10.0.0.8,firewall_allow,200,64,Allowed outbound HTTPS traffic to 203.0.113.5
+2024-04-07T09:14:11Z,db,db01,192.168.1.42,sql_query,200,2048,Executed SELECT on sensitive table by user reporting
+2024-04-07T09:28:53Z,web,web02,192.168.1.33,file_access,200,1536,Downloaded quarterly_financials.xlsx
+2024-04-07T09:45:17Z,app,api01,192.168.1.50,ddos,429,4096,Spike in requests detected from 203.0.113.45
+2024-04-07T10:01:44Z,auth,web01,192.168.1.87,login,401,256,Repeated failed login attempt for user analyst
+2024-04-07T10:02:29Z,firewall,edge-fw,10.0.0.8,firewall_block,403,128,Blocked outbound SMTP connection to 185.199.108.153
+2024-04-07T10:30:05Z,web,web02,192.168.1.33,file_access,200,1024,Accessed internal wiki page /ops/playbook
+2024-04-07T10:47:38Z,db,db01,192.168.1.42,sql_query,200,3072,Stored procedure updated customer records
+2024-04-07T11:05:09Z,app,api01,192.168.1.50,ddos,503,5120,Mitigation triggered for repeated POST /login attempts
+2024-04-07T11:15:47Z,auth,web01,192.168.1.87,login,401,256,Account lockout after multiple failures for analyst
+2024-04-07T12:22:14Z,firewall,edge-fw,10.0.0.8,firewall_block,403,128,Denied inbound RDP connection from 203.0.113.77
+2024-04-07T13:10:55Z,web,web02,192.168.1.33,file_access,200,768,Viewed incident response checklist
+2024-04-07T13:18:31Z,auth,web01,192.168.1.21,login,200,512,User admin@example.com authenticated successfully
+2024-04-07T13:22:48Z,app,api01,192.168.1.50,recon,418,640,Detected suspicious enumeration from 203.0.113.99
+2024-04-07T14:05:02Z,firewall,edge-fw,10.0.0.8,firewall_block,403,128,Blocked Tor exit node 185.220.101.1
+2024-04-07T14:30:26Z,db,db01,192.168.1.42,sql_query,200,2560,Batch insert executed by ETL service
+2024-04-07T15:44:39Z,web,web02,192.168.1.33,file_access,200,896,Generated PDF report for compliance review

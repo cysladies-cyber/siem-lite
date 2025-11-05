@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+app/data/siem.db
+app/data/evidence/*.csv
+app/data/evidence/*.json
+app/data/isoforest.joblib

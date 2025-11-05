@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f6fa;
+}
+.sidebar {
+  min-height: 100vh;
+  width: 220px;
+}
+.sidebar .nav-link {
+  padding: 0.5rem 0;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  text-decoration: underline;
+}
+.kpi-card {
+  min-width: 180px;
+}
+.table tbody tr.is-anomaly {
+  background-color: rgba(220, 53, 69, 0.15);
+}
+.toast {
+  min-width: 240px;
+}
